@@ -12,6 +12,7 @@ from .get_stanford_models import get_stanford_models
 
 # Assumes spice.jar is in the same directory as spice.py.  Change as needed.
 SPICE_JAR = 'spice-1.0.jar'
+SPICE_JAR = os.path.join(os.path.dirname(os.path.abspath(__file__)), SPICE_JAR)
 TEMP_DIR = 'tmp'
 CACHE_DIR = 'cache'
 
